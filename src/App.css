@@ -36,3 +36,264 @@
     transform: rotate(360deg);
   }
 }
+#container{
+  width: 100%;
+  height: 100vh;
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition:2s;
+}
+.App{
+  height: 300vh;
+}
+.About{
+  width: 100wh;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wc3xlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.subabout,.allskills{
+  width:900px;
+  height: 500px;
+  background-color: rgba(255,255,244,.10);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+.itlain{
+  font-style: italic;
+  font-weight: 900;
+  font-size: larger;
+}
+.imagaee{
+  width: 200px;
+  height: 300px;
+  
+  background-image: url("./govind.png");
+  background-size: cover;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 2;
+}
+.allabout{
+  display: flex;
+  width: 75%;
+  height: 70vh;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.para{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 19px;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  line-height: 30px;
+  color: black;
+}
+.skills{
+  background-image: url("https://burst.shopifycdn.com/photos/person-holds-a-book-over-a-stack-and-turns-the-page.jpg?width=1200&format=pjpg&exif=0&iptc=0");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100wh;
+  
+}
+.allskills{
+  height: 280vh;
+  padding-top: 20px;
+}
+#skill1{
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  height: 230px;
+  /* border: 1px solid gray; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+
+}
+.bigmid,.project1{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h11{
+  font-size: 300px;
+  font-style: italic;
+  font-weight: 400;
+}
+.skillimage{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px gray ;
+}
+.skillabout{
+  width: 60%;
+  box-shadow: 0px 0px 10px 10px gray ;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillabout>p{
+  width: 95%;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.skillabout>h1{
+  font-style: italic;
+  font-weight: 400;
+}
+.projects{
+  margin-bottom: 20px;
+  background-image:url("https://www.ittoolkit.com/assets/img/articles/600x300/project-definition.jpg");
+  width: 100%;
+  height: 400vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,40%);
+ justify-content: center;
+ column-gap: 30px;
+ row-gap: 150px;
+  /* border: 1px solid red; */
+}
+.Rglink{
+  position: relative;
+  background-color: #00ccff;
+  width: 100px;
+  height: 40px;
+  color: black;
+  border-radius: 30px;
+  transition:transform 0.3s ease;
+ 
+  box-shadow: 0px 0px 3px 3px gray;
+  margin-left: 20px;
+
+}
+.Rglink::after,.Rglink::before{
+  content: "";
+  position:absolute ;
+  opacity: 0.3;
+  background: #00ccff;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.Rglink:hover{
+  transform: translate(-12px,-12px);
+  cursor: pointer;
+}
+.Rglink:hover::after{
+  transform: translate(6px,6px);
+}
+.Rglink:hover::before{
+  transform: translate(12px,12px);
+}
+
+.blur{
+ 
+  background-color: rgba(255,255,244,.10);
+  backdrop-filter: blur(20px);
+  width:450px;
+  height: 430px;
+  border-radius: 20px;
+  
+
+  
+  
+}
+.project2_1{
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid gray; */
+  margin-bottom: 20px;
+  
+}
+.project2_1>img,.project2_2>img{
+  width: 450px;
+  height: 200px;
+  border: 1px solid gray;
+  margin-left: 170px;
+  border-radius: 20px;
+  
+}
+.fontchange{
+  font-family:'Courier New', Courier, monospace;
+  
+}
+.h1font{
+  font-style: italic;
+}
+.h5font{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.trans{
+  transition:0.3s ease-in-out;
+}
+.contact{
+  width: 100%;
+  height: 150vh;
+  background-image:linear-gradient(332deg,rgba(255,255,244,.6) 50% ,transparent 50%), url("https://wallpaperaccess.com/full/51364.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.contact>h1{
+  height: 10px;
+}
+.contactab{
+  margin-top: 150px;
+  font-size: 150px;
+  font-weight: 400;
+  color:white;
+  font-style: italic;
+}
+.contactba{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.anchor{
+  text-decoration: none;
+  color:black;
+  line-height: 2px;
+  
+}
+.newfont{
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+}
