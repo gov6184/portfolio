@@ -46,13 +46,14 @@ export default function Skills() {
     ])
   return (
     <div className='skills'>
-      <div className='bigmid'><h1 className='h11'>Skill's</h1></div>
+        <a  name="skills"></a>
+      <div data-aos="zoom-in-down" className='bigmid'><h1 className='h11'>Skill's</h1></div>
       <div className='allskills'>
         
         {arr.map((elem,index)=>{
             
             return(
-                <>
+                <div data-aos={index==0?"fade-up":"fade-down"}>
                 {index%2==0?<div id="skill1" >
                     <img className='skillimage' src={elem.image} />
                     <div  className='skillabout'>
@@ -66,7 +67,7 @@ export default function Skills() {
                     </div>
                     <img className='skillimage' src={elem.image} />
                 </div>}
-                </>
+                </div>
             )
         })}
       </div>

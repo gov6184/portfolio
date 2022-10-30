@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Skills from './Skills';
 
+
 export default function Main() {
     let [value,setval]=useState(0)
 useEffect(()=>{
@@ -16,11 +17,14 @@ useEffect(()=>{
        
         console.log(val)
         document.getElementById("container").style.backgroundImage=`url(${urls[val]})`
+        
     },5000)
 })
   return (
     <>
+ 
     <div>
+      <a name="first"></a>
       <div id="container">
             <h1 style={{marginTop:"0px"}}>Hello</h1>
         </div>
@@ -31,7 +35,7 @@ useEffect(()=>{
     <Skills/>
     <hr style={{marginTop:"0px",marginBottom:"1px"}} ></hr>
     <Projects/>
-    <hr style={{marginTop:"0px",marginBottom:"0px"}} ></hr>
+    
     <Contact/>
     </>
     

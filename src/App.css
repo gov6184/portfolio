@@ -39,7 +39,7 @@
 #container{
   width: 100%;
   height: 100vh;
-  
+  background-image: url("https://images5.alphacoders.com/337/337954.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,12 +265,13 @@
 }
 .contact{
   width: 100%;
-  height: 150vh;
-  background-image:linear-gradient(332deg,rgba(255,255,244,.6) 50% ,transparent 50%), url("https://wallpaperaccess.com/full/51364.jpg");
+  height: 224vh;
+  background-image: url("https://wallpaperaccess.com/full/51364.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  position: relative;
+  margin-top: -50px;
 }
 .contact>h1{
   height: 10px;
@@ -279,7 +280,7 @@
   margin-top: 150px;
   font-size: 150px;
   font-weight: 400;
-  color:white;
+  
   font-style: italic;
 }
 .contactba{
@@ -288,12 +289,189 @@
   align-items: center;
 }
 .anchor{
-  text-decoration: none;
-  color:black;
-  line-height: 2px;
+  width: 200px;
+  height: 200px;
+ 
+  border-radius: 10px;
+  backdrop-filter:blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
   
+  transition: 0.5s;
+  overflow: hidden;
 }
+.anchor:hover{
+  transform: translateY(-60px);
+}
+.anchor::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,.2);
+  transform: skewX(45deg) translate(300px);
+  transition:0.5s;
+}
+.anchor:hover::before{
+ 
+  transform: skewX(45deg) translate(-300px);
+}
+
 .newfont{
   font-family: 'Courier New', Courier, monospace;
   color:white;
+}
+
+::-webkit-scrollbar{
+ position: absolute;
+
+  
+  
+ 
+}
+::-webkit-scrollbar-track{
+  border-radius: 20px;
+  position: absolute;
+  z-index: 100000;
+  
+  
+}
+
+::-webkit-scrollbar-thumb{
+  width: 100px;
+  border-radius: 20px;
+  background-color: #00ccff;
+  position: relative;
+ 
+}
+.contts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: red; */
+}
+.emailcontact{
+position: absolute;
+/* transform: translate(-50%, -50%); */
+z-index: 10000;
+width: 100%;
+height: 125vh;
+display: flex;
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(20px);
+visibility: hidden;
+opacity: 0;
+/* background-color: red; */  
+
+
+}
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+.vall{
+  width: 40%;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.2);
+}
+@media only screen and (max-width:1225px){
+ .App{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ }
+  .allskills{
+    width: 90%;
+    height: 300vh;
+  }
+  .skillimage{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skillabout>h1{
+    font-weight: 200;
+    line-height: 1px;
+  }
+  .skillabout>p{
+    font-size: 10px;
+  }
+  .h11{
+    font-size: 100px;
+  }
+  .project2{
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  .project2_1{
+    width:90%;
+  }
+  .project2_1>img{
+    width:250px;
+    height: 140px;
+    margin-left: 30px;
+  }
+  .blur{
+    width: 90%;
+    margin-left:40px;
+  }
+  .projects{
+    height: 500vh;
+  }
+  .contactab{
+    
+    font-size: 70px;
+  }
+  .contactba{
+    flex-direction: column;
+  }
+  .allabout{
+    flex-direction: column;
+  }
+  .subabout{
+    width: 110%;
+    height:750px ;
+    position: relative;
+    margin-top: 220px;
+    
+  }
+  .para{
+    font-size: 13px;
+   
+  }
+  .imagaee{
+    margin-top: 0px;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+  }
+  .About{
+    height: 170vh;
+  }
+  #container{
+    background-size:100% 100%;
+  }
+  .skills{
+    height: 460vh;
+  }
+  .contts{
+    flex-direction: column;
+   
+    
+  }
+  .anchor{
+    width: 100px;
+    height: 100px;
+  }
 }

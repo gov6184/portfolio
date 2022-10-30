@@ -2,14 +2,16 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='About'>
+    
+    <div  className='About'>
+      <a name="about" ></a>
       <h1 style={{marginTop:"0px"}}>About</h1>
       <h3 className='itlain'>I, would like to extend a warm greeting to you.</h3>
       <div className='allabout'>
-        <div className='imagaee'>
+        <div data-aos="flip-right" className='imagaee'>
           
         </div>
-        <div className='subabout'>
+        <div data-aos="flip-left" className='subabout'>
           <h1>So,finally you'r here, thank you, and I hope you enjoy it &#128513;</h1>
           <hr></hr>
           <h2>Now, let's talk about me,shall we?</h2>

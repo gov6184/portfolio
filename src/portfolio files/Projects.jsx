@@ -61,22 +61,24 @@ export default function Projects() {
   })
   return (
     <div className='projects'>
-      <div className='project1'>
-        <h1 className='h11'>project's</h1>
+      <a name="projects"></a>
+      <div data-aos="zoom-in-down" className='project1'>
+        <h1  className='h11'>project's</h1>
       </div>
-      <div className='project2'>
+      <div  className='project2' >
         {
           arr.map((elem,index)=>{
            
             return(
-              <div className='project2_1'>
+              <div data-aos={index%2==0?"fade-up":"fade-up"} className='project2_1'>
+                
               <img className='trans' id={`image${index}`}  />
               <div className='blur'>
                 <h1 className='h1font' >{elem.heading}</h1>
                 <h3 className='fontchange'>{elem.about}</h3>
-                <h4 style={{lineHeight:"0%",fontFamily:"cursive"}}>contrubuters</h4>
+                <h4 style={{lineHeight:"24px",fontFamily:"cursive"}}>contrubuters</h4>
                 <h5 className='h5font'> {elem.contrubuters}</h5>
-                <h4 style={{lineHeight:"0%" ,fontFamily:"cursive"}}>Tool's </h4>
+                <h4 style={{lineHeight:"24px", fontFamily:"cursive"}}>Tool's </h4>
                 <h5 className='h5font'> {elem.tools}</h5>
                 <div style={{width:"100%",display:"flex",justifyContent:"center",alignItems:"center"}}>
                   <a href={elem.codelink} target="_blank"><button className='Rglink'>Code Link</button></a>
