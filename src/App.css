@@ -355,32 +355,12 @@
   width: 100%;
   /* background-color: red; */
 }
-.emailcontact{
-position: absolute;
-/* transform: translate(-50%, -50%); */
-z-index: 10000;
-width: 100%;
-height: 125vh;
-display: flex;
-justify-content: center;
-align-items: center;
-backdrop-filter: blur(20px);
-visibility: hidden;
-opacity: 0;
-/* background-color: red; */  
 
-
-}
 .active{
   visibility: visible;
   opacity: 1;
 }
-.vall{
-  width: 40%;
-  height: 500px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,.2);
-}
+
 @media only screen and (max-width:1225px){
  .App{
   width: 100%;

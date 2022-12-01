@@ -1,0 +1,44 @@
+.popup{
+    width: 400px;
+   
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    right: 0%;
+  border-radius: 20px;
+   color: white;
+  
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.popupname{
+    font-style: italic;
+}
+.popup.notshow{
+    display: none;
+}
+.popup.show{
+    animation:show_dd 1s ease forwards;
+}
+@keyframes show_dd {
+    0%{
+        transform: translateX(100%);
+        background: red;
+    }
+    40%{
+        transform: translateX(-10%);
+        background-color: blue;
+    }
+    80%{
+        transform: translateX(0%);
+        background-color: green;
+    }
+    100%{
+        transform: translateX(-10%);
+       
+    }
+}
+

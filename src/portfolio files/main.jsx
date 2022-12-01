@@ -15,7 +15,7 @@ useEffect(()=>{
     setInterval(()=>{
        let val=Math.floor(Math.random()*6)
        
-        console.log(val)
+      
         document.getElementById("container").style.backgroundImage=`url(${urls[val]})`
         
     },5000)
