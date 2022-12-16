@@ -12,10 +12,10 @@ export default function About() {
           
         </div>
         <div data-aos="flip-left" className='subabout'>
-          <h1>So,finally you'r here, thank you, and I hope you enjoy it &#128513;</h1>
+          <h1  style={{fontSize:"31px"}}>So,finally you'r here, thank you, and I hope you enjoy it &#128513;</h1>
           <hr></hr>
-          <h2>Now, let's talk about me,shall we?</h2>
-          <p className='para'>Hello, my name is <h1 className='itlain' style={{fontSize:"25px"}}>Govind Mishra</h1>from Mumbai</p>
+          <h2 style={{margin:"10px"}}>Now, let's talk about me,shall we?</h2>
+          <p className='para' style={{lineHeight:"30px"}}>Hello, my name is <h1 className='itlain' style={{fontSize:"25px",margin:"30px 0px"}}>Govind Mishra</h1 >from Mumbai/Maharashtra</p>
           <p className='para'>I'm a programmer that enjoys experimenting with different languages and algorithms and discover new information and putting it into practise.
 I enjoy working on projects that put me to the test and help me enhance my abilities.
 I'm a self-motivated learner and a web developer who can produce clear, concise code.</p>
