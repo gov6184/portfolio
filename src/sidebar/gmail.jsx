@@ -53,7 +53,7 @@ export default function Gmail({toggle ,settoggle}) {
     </form>
     
     <div id={style.overlay} onClick={()=>{settoggle(false)}}>
-    <Popup val={show}/>
+    <Popup color={true} val={show} data={"Thank you "}/>
     </div>
     
     
